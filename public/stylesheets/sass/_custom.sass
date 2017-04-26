@@ -1,0 +1,197 @@
+body
+	
+	background-color 		: $body_bg
+
+
+.Main
+	
+	margin 			 		: 40px auto 
+	display 		 		: block
+	max-width 		 		: 395px
+	width 			 		: 95%
+
+
+.header
+	
+	width 			 		: 100%
+	padding 		 		: 10px 0
+	font-size 		 		: 0
+
+
+.header > *
+	
+	vertical-align 	 		: bottom
+
+
+.header > *,
+.person > *,
+.alert > *
+
+	font-size 		 		: initial
+	display 		 		: inline-block
+	vertical-align 			: middle
+
+
+.brand,
+.header,
+.userImg,
+.person
+
+	position 		 		: relative
+
+
+.brand
+	
+	z-index 		 		: 99 
+	max-width 		 		: 45%
+
+
+.title
+	
+	width 			 		: 75%
+	background-color 		: $options_color
+	position 		 		: absolute
+	right 			 		: 0
+	bottom 			 		: 25px
+	z-index 		 		: 1
+	padding 		 		: 10px 5% 10px 0
+	text-align 		 		: right
+	font-weight 	 		: bold
+	color 			 		: $body_bg
+	font-size 		 		: $large_title 
+
+
+.title,
+.persons 
+
+	@include border-radius(3px)
+
+	
+.body
+	
+	padding 		 		: 5px 0 0 0
+	background-color 		: transparent
+
+
+.persons 
+	
+	background-color 		: $options_color
+	list-style 		 		: none
+	padding 		 		: 0
+	margin 			 		: 0 0 0 10%
+	width 			 		: 90%
+
+
+.person
+	
+	font-size 		 		: 0
+	padding 		 		: 15px 5px
+	display 				: block
+	cursor 					: pointer
+
+.person:hover .label h5
+	
+	color 					: $description_color_hover
+
+
+.person.mark
+	
+	background-color 		: $mark_item_color
+
+
+.userImg
+
+	width 					: 30%
+
+
+.userImg .circleBox
+
+	overflow 				: hidden
+	display 				: block
+	margin 					: 0 auto
+
+
+.userImg .circleBox,
+.rank
+
+	@include border-radius(100%)
+
+
+.rank
+
+	background-color 		: $rank_color
+	color 					: $description_color_hover
+	font-weight 			: bold
+	position 				: absolute
+	right 					: 0
+	bottom 					: 0
+	text-align 				: center
+
+
+.userImg .circleBox img
+	
+	margin 					: 0 -20%
+	max-width 				: initial
+	max-height 				: 100%
+
+
+.label
+
+	width 					: 70%
+
+
+.label h3
+	
+	color 					: $names_color
+	font-size 				: $name_size 
+
+
+.label h5
+	
+	color 					: $description_color
+	font-size 				: $description_size 
+	@include transition(150ms color linear)
+
+
+.alert
+	
+	font-size 				: 0
+	background-color 		: $rage_color
+	text-align 				: center
+	color 					: $rage_text_color
+	@include border-radius(5px)
+
+
+.alert > *
+
+	font-size 				: $large_title
+	font-weight 			: bold
+
+
+.alert span
+	
+	display 				: block
+	font-size 				: $description_size
+	padding 				: 5px 0
+	background-color 		: $names_color
+	color 					: $rage_color
+	font-weight 			: bold
+
+
+.alert .like
+
+	border-right 			: solid 1px $body_bg
+
+
+.like,
+.like span
+
+	@include border-radius(3px 0 0 0)
+
+
+.unlike,
+.unlike span
+
+	@include border-radius(0 3px 0 0)
+
+

@@ -2,10 +2,17 @@
   "name": "R7FrontendTest",
   "version": "0.0.1",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "mustache public/index.html"
   },
+  "license": "MIT",
   "dependencies": {
     "connect": "~3.1.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "mustache": "^2.3.0",
     "serve-static": "~1.5.3"
   }
 }

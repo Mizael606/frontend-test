@@ -51,3 +51,7 @@ use-a!)
 
 
 <br><br><sub>Os dados presentes neste teste são totalmente fictícios.</sub>
+
+
+Pessoal, como vocês solicitaram, estou reportando a única alteração que fiz na estrutura,
+que foi a alteração da pasta images para os arquivos de imagens que eu iria usar.

@@ -1,0 +1,93 @@
+@media only screen and (max-width: 864px)
+
+	.brand
+
+		width 			: 40%
+
+	.userImg .circleBox
+
+		width 			: 65px
+		height 			: 65px 
+
+	.rank
+
+		right 			: 17.5%
+		bottom 			: -3%
+		width 			: 18px
+		height 			: 18px
+		font-size 		: 12px
+		line-height 	: 18px
+
+	.alert
+
+		margin 			: 20px auto
+		width 			: 240px
+		display 		: block
+
+	.like
+
+		width 			: #{((45 * (240/100))-1)}px
+
+	
+	.unlike
+
+		width 			: #{(55 * (240/100))}px
+
+
+	.alert img
+
+		display 		: none
+
+
+@media only screen and (min-width: 864px)
+
+	.userImg .circleBox
+
+		width 			: 75px
+		height 			: 75px 
+
+
+	.rank
+
+		right 			: 17.5%
+		bottom 			: -3%
+		width 			: 20px
+		height 			: 20px
+		font-size 		: 14px
+		line-height 	: 20px
+
+
+	.person:not(:hover) .alert
+
+		opacity 		: 0
+
+		
+
+	.alert
+
+		position 		: absolute
+		width 			: 200px
+		height 			: 64px
+		top 			: 50%
+		right 			: -220px
+		margin-top 		: -32px
+		@include transition(opacity 320ms linear)
+				
+
+	.alert img
+
+		position 		: absolute
+		top 			: 25px
+		left 			: -15px
+
+
+	.like
+
+		width 			: #{((45 * (200/100))-1)}px
+
+	
+	.unlike
+
+		width 			: #{(55 * (200/100))}px
+
+

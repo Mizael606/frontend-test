@@ -1,14 +1,124 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="pt-br">
+
   <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>R7 FrontEnd Test</title>
 
     <link rel="stylesheet" href="stylesheets/style.css" media="all">
+
+
   </head>
-  <body>
+
+  	<body>
       <!-- let's code :D -->
 
-    <script src="javascripts/main.js"></script> 
+      <!--Tamplates-->
+
+			<script id="list" type="text/html">
+				
+				<li id="person_{{rank}}" data-range="range_{{rank}}" class="person{{mark}}">
+					
+					<div class="userImg">
+						
+						<div class="circleBox">
+						
+							<img src="{{imagem}}" alt="{{nome}}">
+						
+						</div>
+
+						<span class="rank">
+							
+							{{rank}}
+
+						</span>
+
+					</div>
+
+					<div class="label">
+						
+						<h3>
+							
+							{{nome}}
+
+						</h3>
+						<h5>
+							
+							{{descricao}}
+
+						</h5>
+
+					</div>
+
+					<div id="range_{{rank}}" class="alert">
+						
+						<img src="images/arrow.png" alt="Gostei Não Gostei">
+
+						<div class="like">
+							
+							<span>
+								
+								GOSTAM
+
+							</span>
+
+							{{likes}}%
+
+						</div>
+
+						<div class="unlike">
+
+							<span>
+								
+								NÃO GOSTAM
+
+							</span>
+							
+							{{unlikes}}%
+
+						</div>
+
+					</div>
+
+				</li>
+
+			</script>
+
+      <!--/Tamplates-->
+
+      	<div class="Main">
+      		
+			<div class="header">
+				
+				<div class="brand">
+					
+					<img src="images/logo.png" alt="A fazenda">
+
+				</div>
+
+				<div class="title">
+					
+					RANKING
+
+				</div>
+				
+			</div>
+
+			<div class="body">
+				
+				<ul id="persons" class="persons"></ul>
+
+			</div>
+
+      	</div>
+
+		<script src="javascripts/mustache.min.js"></script> 
+	    <script src="javascripts/main.js"></script> 
+
+	</body>
+
 </html>

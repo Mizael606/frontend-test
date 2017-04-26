@@ -218,10 +218,10 @@ body {
     top: 50%;
     right: -220px;
     margin-top: -32px;
-    -webkit-transition: opacity 320ms linear;
-    -moz-transition: opacity 320ms linear;
-    -o-transition: opacity 320ms linear;
-    transition: opacity 320ms linear; }
+    -webkit-transition: opacity 220ms linear;
+    -moz-transition: opacity 220ms linear;
+    -o-transition: opacity 220ms linear;
+    transition: opacity 220ms linear; }
   .alert img {
     position: absolute;
     top: 25px;
